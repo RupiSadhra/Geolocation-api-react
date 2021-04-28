@@ -13,9 +13,10 @@ const getSeason=(lat,month)=>
 }
 
 const SeasonDisplay=(props)=>{
-    const season=getSeason(props.lat, new Date().getMonth())
+    const season=getSeason(props.lat, new Date().getMonth());
+    const text=(season==='summer')?"It's summer in your area!":"It's winter in your area!";
     return <div className='season-container'>
-        <h1>{season}</h1>
+        <h1>{text}</h1>
     </div>
 }
 
