@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
+import { CircularProgress } from '@material-ui/core';
 
 
 class App extends React.Component
@@ -15,7 +16,7 @@ class App extends React.Component
     {
        if(!this.state.lat && !this.state.errorMessage)
        {
-        return <div>Loading</div>
+        return <CircularProgress/>
        }
        if(!this.state.lat && this.state.errorMessage)
        {
