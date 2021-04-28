@@ -1,0 +1,13 @@
+.season-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid aquamarine;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+}
